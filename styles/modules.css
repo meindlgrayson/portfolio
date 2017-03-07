@@ -1,0 +1,10 @@
+.burger-nav {
+  display: block;
+  float: right;
+}
+
+@media only screen and (min-width: 420px) {
+  .burger-nav {
+    display: none;
+  }
+}
