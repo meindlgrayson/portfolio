@@ -1,7 +1,3 @@
-header {
-  background-color: lightslategray;
-}
-
 .clearfix::after {
   content: "";
   display: table;
@@ -12,21 +8,12 @@ nav {
   float: clear;
 }
 
-li a:visited, li a:link {
-  text-decoration: none;
-  color: gold;
-}
-
 h1 {
   width: 140px;
   text-align: center;
   margin: 0 auto;
   padding: 10px 20px 10px 20px;
   float: left;
-}
-
-div.burger {
-  float: right;
 }
 
 .burger-nav {

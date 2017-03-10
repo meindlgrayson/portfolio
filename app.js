@@ -1,8 +1,13 @@
 'use strict';
 
-function Projects() {
-  this.name = name;
-  this.author = author;
-  this.address = address;
-  this.description = description;
+function ProjObj(examples) {
+  this.name = examples.name,
+  this.projUrl = examples.projUrl;
+  this.description = examples.description;
+  this.author = examples.author;
+  this.thumb = examples.thumb;
+}
+
+ProjObj.prototype.toHtml = function () {
+  var $newProj = $('article.template').clone();
 }

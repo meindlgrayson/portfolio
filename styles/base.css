@@ -1,0 +1,8 @@
+header {
+  background-color: lightslategray;
+}
+
+li a:visited, li a:link {
+  text-decoration: none;
+  color: gold;
+}
