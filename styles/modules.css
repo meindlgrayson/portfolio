@@ -1,0 +1,71 @@
+header {
+  background-color: lightslategray;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav {
+  float: clear;
+}
+
+li a:visited, li a:link {
+  text-decoration: none;
+  color: gold;
+}
+
+h1 {
+  width: 140px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px 20px 10px 20px;
+  float: left;
+}
+
+div.burger {
+  float: right;
+}
+
+.burger-nav {
+  display: none;
+  margin-top: 0px;
+  /*margin-left: -30px;*/
+  list-style-type: none;
+  clear: left;
+  text-align: center;
+}
+
+.burger-nav li {
+  padding: 20px 0;
+}
+
+nav:hover ul {
+  display: block;
+}
+
+.main-nav {
+  display: none;
+}
+
+@media only screen and (min-width: 420px) {
+  .menu-button {
+    display: none;
+  }
+
+  .burger-nav, .burger-nav li {
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 5px;
+  }
+
+  nav:hover ul {
+    display: inline-block;
+  }
+
+  nav {
+    float: right;
+  }
+}
