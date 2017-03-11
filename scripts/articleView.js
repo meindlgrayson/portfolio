@@ -7,6 +7,9 @@ articleView.handleMainNav = function () {
     $('.tab-content').hide();
     $('#' + $(this).data('content')).fadeIn('slow');
   });
+
+  $('.burger-nav .tab:first').click();
+
 };
 
 articleView.handleMainNav();
