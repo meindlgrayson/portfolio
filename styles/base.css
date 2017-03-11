@@ -1,8 +1,17 @@
+body {
+  background-color: #eff1f3;
+  color: #223843;
+}
+
+h1 {
+  color: #d8b4a0;
+}
+
 header {
-  background-color: lightslategray;
+  background-color: #d77a61;
 }
 
 li a:visited, li a:link {
   text-decoration: none;
-  color: gold;
+  color: #dbd3d8;
 }
