@@ -9,6 +9,8 @@ function ProjObj(examples) {
   this.thumb = examples.thumb;
 }
 
+ProjObj.all = [];
+
 ProjObj.prototype.toHtml = function () {
   var source   = $('#entry-template').html();
   var template = Handlebars.compile(source);
@@ -16,10 +18,37 @@ ProjObj.prototype.toHtml = function () {
   return html;
 };
 
-projArray.forEach(function(ele) {
-  articles.push(new ProjObj(ele));
-});
+ProjObj.loadAll = function (workData) {
 
-articles.forEach(function(a){
-  $('#projects').append(a.toHtml());
-});
+  workData.forEach(function (ele) {
+    ProjObj.all.push(new ProjObj(ele));
+  })
+}
+
+ProjObj.fetchAll = function() {
+  if (localStorage.workData) {
+    console.log('hint?');
+    ProjObj.loadAll(JSON.parse(localStorage.workData));
+    ProjObj.all.forEach(function(a){
+      $('#projects').append(a.toHtml());
+    });
+  } else {
+    $.ajax({
+      url: 'proj.json',
+      method: 'GET',
+      success: function(d) {
+        console.log(d);
+        localStorage.setItem('workData', JSON.stringify(d));
+        ProjObj.loadAll(JSON.parse(localStorage.workData));
+        ProjObj.all.forEach(function(a){
+          $('#projects').append(a.toHtml());
+        });
+      },
+      error: function(error) {
+        console.log('in error handler', error);
+      }
+    });
+  }
+};
+
+ProjObj.fetchAll();
