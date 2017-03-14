@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "package file for portfolio",
+  "main": "server.js",
+  "scripts": {
+    "test": "what?",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meindlgrayson/portfolio.git"
+  },
+  "author": "Grayson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meindlgrayson/portfolio/issues"
+  },
+  "homepage": "https://github.com/meindlgrayson/portfolio#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
