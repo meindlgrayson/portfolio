@@ -27,7 +27,6 @@ ProjObj.loadAll = function (workData) {
 
 ProjObj.fetchAll = function() {
   if (localStorage.workData) {
-    console.log('hint?');
     ProjObj.loadAll(JSON.parse(localStorage.workData));
     ProjObj.all.forEach(function(a){
       $('#projects').append(a.toHtml());
@@ -37,7 +36,6 @@ ProjObj.fetchAll = function() {
       url: 'proj.json',
       method: 'GET',
       success: function(d) {
-        console.log(d);
         localStorage.setItem('workData', JSON.stringify(d));
         ProjObj.loadAll(JSON.parse(localStorage.workData));
         ProjObj.all.forEach(function(a){
