@@ -5,7 +5,8 @@ var projArray = [
     projUrl: 'https://meindlgrayson.github.io/beer_buddies/',
     description: 'Interactive trivia drinking game that can be played by up to four users at once.',
     author: 'Grayson Meindl, Keeley Hammond, Morgan Fogarty, Jade Rager',
-    thumb: 'coming soon'
+    thumb: 'coming soon',
+    pub: '1-12-17'
   },
 
   {
@@ -13,7 +14,8 @@ var projArray = [
     projUrl: 'https://meindlgrayson.github.io/bus-mall/',
     description: 'Focus group activity where participants click the product most likely to purchase, with results displayed at the end.',
     author: 'Grayson Meindl',
-    thumb: 'coming soon'
+    thumb: 'coming soon',
+    pub: '1-4-17'
   },
 
   {
@@ -21,6 +23,7 @@ var projArray = [
     projUrl: 'https://meindlgrayson.github.io/salmon_cookies/',
     description: 'Website for cookie-chain that tracks hypothetical sales based on store info.',
     author: 'Grayson Meindl',
-    thumb: 'coming soon'
+    thumb: 'coming soon',
+    pub: '1-7-17'
   }
 ];

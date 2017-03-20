@@ -1,15 +1,19 @@
 'use strict';
 
-var articleView = {};
+(function (module) {
 
-articleView.handleMainNav = function () {
-  $('.burger-nav').on('click', '.tab', function () {
-    $('.tab-content').hide();
-    $('#' + $(this).data('content')).fadeIn('slow');
-  });
+  var articleView = {};
 
-  $('.burger-nav .tab:first').click();
+  articleView.handleMainNav = function () {
+    $('.burger-nav').on('click', '.tab', function () {
+      $('.tab-content').hide();
+      $('#' + $(this).data('content')).fadeIn('slow');
+    });
 
-};
+    $('.burger-nav .tab:first').click();
 
-articleView.handleMainNav();
+  };
+
+  articleView.handleMainNav();
+  module.articleView = articleView;
+})(window);
