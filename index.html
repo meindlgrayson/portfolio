@@ -30,9 +30,9 @@
         <button class="menu-button"><img src="icons-images/menu.svg"></button>
       </div>
       <ul class="burger-nav">
-        <li class="tab" data-content="home"><a href="#">main</a></li>
-        <li class="tab" data-content="about"><a href="#">about</a></li>
-        <li class="tab" data-content="projects"><a href="#">work</a></li>
+        <li class="tab" data-content="home"><a href="/">main</a></li>
+        <li class="tab" data-content="about"><a href="/about">about</a></li>
+        <li class="tab" data-content="projects"><a href="/work">work</a></li>
       </ul>
     </nav>
   </header>
@@ -53,10 +53,14 @@
   <section id="home" class="tab-content">
     <h2>Content Coming Soon</h2>
   </section>
+  <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="/scripts/projects.js"></script>
-  <script src="/scripts/article.js"></script>
-  <script src="/scripts/articleView.js"></script>
+  <script src="/scripts/model/article.js"></script>
+  <script src="/scripts/view/articleView.js"></script>
+  <script src="/scripts/controller/workController.js"></script>
+  <script src="/scripts/controller/aboutController.js"></script>
+  <script src="/scripts/controller/mainController.js"></script>
+  <script src="/scripts/controller/routes.js"></script>
 </body>
 </html>
