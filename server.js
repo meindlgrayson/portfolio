@@ -2,7 +2,9 @@
 
 const express = require('express');
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
+const conString = 'postgres://localhost:5432';
+const client = new pg.Client(conString);
 
 app.use(express.static('./'));
 app.get('/', function(request, response) {
